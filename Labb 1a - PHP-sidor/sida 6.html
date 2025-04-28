@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Sida 6 - HTML till PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Meny -->
+<nav style="text-align: center; margin-bottom: 30px;">
+    <a href="sida1.php">Sida 1</a> |
+    <a href="sida2.php">Sida 2</a> |
+    <a href="sida3.php">Sida 3</a> |
+    <a href="sida4.php">Sida 4</a> |
+    <a href="sida5.php">Sida 5</a> |
+    <a href="sida6.html">Sida 6 (HTML)</a> |
+    <a href="sida6.php">Sida 6 (PHP)</a>
+</nav>
+
+<h1>Skicka data mellan HTML och PHP</h1>
+<p>På denna sida kan du mata in ditt namn och telefonnummer, och sedan skickas informationen till sida6.php. Du kan välja att skicka informationen via GET eller POST.</p>
+
+<h2>Formulär 1 – GET</h2>
+<form action="sida6.php" method="get">
+    <label for="namn_get">Namn:</label>
+    <input type="text" id="namn_get" name="namn"><br>
+
+    <label for="telefon_get">Telefon:</label>
+    <input type="text" id="telefon_get" name="telefon"><br>
+
+    <input type="submit" value="Skicka med GET">
+</form>
+
+<h2>Formulär 2 – POST</h2>
+<form action="sida6.php" method="post">
+    <label for="namn_post">Namn:</label>
+    <input type="text" id="namn_post" name="namn"><br>
+
+    <label for="telefon_post">Telefon:</label>
+    <input type="text" id="telefon_post" name="telefon"><br>
+
+    <input type="submit" value="Skicka med POST">
+</form>
+
+<footer style="text-align: center; margin-top: 50px;">
+    <p>Luleå tekniska universitet | Webbutveckling II - Skriptspråk och databaser | <samdre-2> | <2025></p>
+</footer>
+
+</body>
+</html>
